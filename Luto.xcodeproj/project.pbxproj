@@ -1,0 +1,581 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		682D06A62A5487D200EA4745 /* LutoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682D06A52A5487D200EA4745 /* LutoApp.swift */; };
+		682D06A82A5487D200EA4745 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682D06A72A5487D200EA4745 /* ContentView.swift */; };
+		682D06AA2A5487D500EA4745 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 682D06A92A5487D500EA4745 /* Assets.xcassets */; };
+		682D06AD2A5487D500EA4745 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 682D06AC2A5487D500EA4745 /* Preview Assets.xcassets */; };
+		682D06B82A5487D600EA4745 /* LutoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682D06B72A5487D600EA4745 /* LutoTests.swift */; };
+		682D06C22A5487D600EA4745 /* LutoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682D06C12A5487D600EA4745 /* LutoUITests.swift */; };
+		682D06C42A5487D600EA4745 /* LutoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682D06C32A5487D600EA4745 /* LutoUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		682D06B42A5487D600EA4745 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 682D069A2A5487D200EA4745 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 682D06A12A5487D200EA4745;
+			remoteInfo = Luto;
+		};
+		682D06BE2A5487D600EA4745 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 682D069A2A5487D200EA4745 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 682D06A12A5487D200EA4745;
+			remoteInfo = Luto;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		682D06A22A5487D200EA4745 /* Luto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Luto.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		682D06A52A5487D200EA4745 /* LutoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LutoApp.swift; sourceTree = "<group>"; };
+		682D06A72A5487D200EA4745 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		682D06A92A5487D500EA4745 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		682D06AC2A5487D500EA4745 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		682D06AE2A5487D500EA4745 /* Luto.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Luto.entitlements; sourceTree = "<group>"; };
+		682D06B32A5487D600EA4745 /* LutoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LutoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		682D06B72A5487D600EA4745 /* LutoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LutoTests.swift; sourceTree = "<group>"; };
+		682D06BD2A5487D600EA4745 /* LutoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LutoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		682D06C12A5487D600EA4745 /* LutoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LutoUITests.swift; sourceTree = "<group>"; };
+		682D06C32A5487D600EA4745 /* LutoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LutoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		682D069F2A5487D200EA4745 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		682D06B02A5487D600EA4745 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		682D06BA2A5487D600EA4745 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		682D06992A5487D200EA4745 = {
+			isa = PBXGroup;
+			children = (
+				682D06A42A5487D200EA4745 /* Luto */,
+				682D06B62A5487D600EA4745 /* LutoTests */,
+				682D06C02A5487D600EA4745 /* LutoUITests */,
+				682D06A32A5487D200EA4745 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		682D06A32A5487D200EA4745 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				682D06A22A5487D200EA4745 /* Luto.app */,
+				682D06B32A5487D600EA4745 /* LutoTests.xctest */,
+				682D06BD2A5487D600EA4745 /* LutoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		682D06A42A5487D200EA4745 /* Luto */ = {
+			isa = PBXGroup;
+			children = (
+				682D06A52A5487D200EA4745 /* LutoApp.swift */,
+				682D06A72A5487D200EA4745 /* ContentView.swift */,
+				682D06A92A5487D500EA4745 /* Assets.xcassets */,
+				682D06AE2A5487D500EA4745 /* Luto.entitlements */,
+				682D06AB2A5487D500EA4745 /* Preview Content */,
+			);
+			path = Luto;
+			sourceTree = "<group>";
+		};
+		682D06AB2A5487D500EA4745 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				682D06AC2A5487D500EA4745 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		682D06B62A5487D600EA4745 /* LutoTests */ = {
+			isa = PBXGroup;
+			children = (
+				682D06B72A5487D600EA4745 /* LutoTests.swift */,
+			);
+			path = LutoTests;
+			sourceTree = "<group>";
+		};
+		682D06C02A5487D600EA4745 /* LutoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				682D06C12A5487D600EA4745 /* LutoUITests.swift */,
+				682D06C32A5487D600EA4745 /* LutoUITestsLaunchTests.swift */,
+			);
+			path = LutoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		682D06A12A5487D200EA4745 /* Luto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 682D06C72A5487D600EA4745 /* Build configuration list for PBXNativeTarget "Luto" */;
+			buildPhases = (
+				682D069E2A5487D200EA4745 /* Sources */,
+				682D069F2A5487D200EA4745 /* Frameworks */,
+				682D06A02A5487D200EA4745 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Luto;
+			productName = Luto;
+			productReference = 682D06A22A5487D200EA4745 /* Luto.app */;
+			productType = "com.apple.product-type.application";
+		};
+		682D06B22A5487D600EA4745 /* LutoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 682D06CA2A5487D600EA4745 /* Build configuration list for PBXNativeTarget "LutoTests" */;
+			buildPhases = (
+				682D06AF2A5487D600EA4745 /* Sources */,
+				682D06B02A5487D600EA4745 /* Frameworks */,
+				682D06B12A5487D600EA4745 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				682D06B52A5487D600EA4745 /* PBXTargetDependency */,
+			);
+			name = LutoTests;
+			productName = LutoTests;
+			productReference = 682D06B32A5487D600EA4745 /* LutoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		682D06BC2A5487D600EA4745 /* LutoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 682D06CD2A5487D600EA4745 /* Build configuration list for PBXNativeTarget "LutoUITests" */;
+			buildPhases = (
+				682D06B92A5487D600EA4745 /* Sources */,
+				682D06BA2A5487D600EA4745 /* Frameworks */,
+				682D06BB2A5487D600EA4745 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				682D06BF2A5487D600EA4745 /* PBXTargetDependency */,
+			);
+			name = LutoUITests;
+			productName = LutoUITests;
+			productReference = 682D06BD2A5487D600EA4745 /* LutoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		682D069A2A5487D200EA4745 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					682D06A12A5487D200EA4745 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					682D06B22A5487D600EA4745 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 682D06A12A5487D200EA4745;
+					};
+					682D06BC2A5487D600EA4745 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 682D06A12A5487D200EA4745;
+					};
+				};
+			};
+			buildConfigurationList = 682D069D2A5487D200EA4745 /* Build configuration list for PBXProject "Luto" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 682D06992A5487D200EA4745;
+			productRefGroup = 682D06A32A5487D200EA4745 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				682D06A12A5487D200EA4745 /* Luto */,
+				682D06B22A5487D600EA4745 /* LutoTests */,
+				682D06BC2A5487D600EA4745 /* LutoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		682D06A02A5487D200EA4745 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				682D06AD2A5487D500EA4745 /* Preview Assets.xcassets in Resources */,
+				682D06AA2A5487D500EA4745 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		682D06B12A5487D600EA4745 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		682D06BB2A5487D600EA4745 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		682D069E2A5487D200EA4745 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				682D06A82A5487D200EA4745 /* ContentView.swift in Sources */,
+				682D06A62A5487D200EA4745 /* LutoApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		682D06AF2A5487D600EA4745 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				682D06B82A5487D600EA4745 /* LutoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		682D06B92A5487D600EA4745 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				682D06C42A5487D600EA4745 /* LutoUITestsLaunchTests.swift in Sources */,
+				682D06C22A5487D600EA4745 /* LutoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		682D06B52A5487D600EA4745 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 682D06A12A5487D200EA4745 /* Luto */;
+			targetProxy = 682D06B42A5487D600EA4745 /* PBXContainerItemProxy */;
+		};
+		682D06BF2A5487D600EA4745 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 682D06A12A5487D200EA4745 /* Luto */;
+			targetProxy = 682D06BE2A5487D600EA4745 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		682D06C52A5487D600EA4745 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		682D06C62A5487D600EA4745 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		682D06C82A5487D600EA4745 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Luto/Luto.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Luto/Preview Content\"";
+				DEVELOPMENT_TEAM = NQ2WC7F77Y;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.pixwel.Luto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		682D06C92A5487D600EA4745 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Luto/Luto.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Luto/Preview Content\"";
+				DEVELOPMENT_TEAM = NQ2WC7F77Y;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.pixwel.Luto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		682D06CB2A5487D600EA4745 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NQ2WC7F77Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.pixwel.LutoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Luto.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Luto";
+			};
+			name = Debug;
+		};
+		682D06CC2A5487D600EA4745 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NQ2WC7F77Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.pixwel.LutoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Luto.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Luto";
+			};
+			name = Release;
+		};
+		682D06CE2A5487D600EA4745 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NQ2WC7F77Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.pixwel.LutoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Luto;
+			};
+			name = Debug;
+		};
+		682D06CF2A5487D600EA4745 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NQ2WC7F77Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.pixwel.LutoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Luto;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		682D069D2A5487D200EA4745 /* Build configuration list for PBXProject "Luto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				682D06C52A5487D600EA4745 /* Debug */,
+				682D06C62A5487D600EA4745 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		682D06C72A5487D600EA4745 /* Build configuration list for PBXNativeTarget "Luto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				682D06C82A5487D600EA4745 /* Debug */,
+				682D06C92A5487D600EA4745 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		682D06CA2A5487D600EA4745 /* Build configuration list for PBXNativeTarget "LutoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				682D06CB2A5487D600EA4745 /* Debug */,
+				682D06CC2A5487D600EA4745 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		682D06CD2A5487D600EA4745 /* Build configuration list for PBXNativeTarget "LutoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				682D06CE2A5487D600EA4745 /* Debug */,
+				682D06CF2A5487D600EA4745 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 682D069A2A5487D200EA4745 /* Project object */;
+}
