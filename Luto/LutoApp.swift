@@ -14,7 +14,7 @@ struct LutoApp: App {
     
     var body: some Scene {
         WindowGroup(id: "MainWindow") {
-            MainView(taskTitle: "", taskDescription: "", listTask: [])
+            MainView()
         }
     }
 }
@@ -33,14 +33,14 @@ class AppDelegate: NSObject, NSApplicationDelegate, ObservableObject {
         statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
         
         if let statusButton = statusItem.button {
-            statusButton.image = NSImage(systemSymbolName: "brain", accessibilityDescription: "Chart Line")
+            statusButton.image = NSImage(systemSymbolName: "brain", accessibilityDescription: "A brain")
             statusButton.action = #selector(togglePopover)
         }
         
         self.popover = NSPopover()
         self.popover.contentSize = NSSize(width: 500, height: 500)
         self.popover.behavior = .transient
-        self.popover.contentViewController = NSHostingController(rootView: MainView(taskTitle: "", taskDescription: "", listTask: [])
+        self.popover.contentViewController = NSHostingController(rootView: MainView()
 )
     }
     
