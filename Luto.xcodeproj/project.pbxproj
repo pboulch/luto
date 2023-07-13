@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		680A62122A5F475D004C21A4 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680A62112A5F475D004C21A4 /* ViewExtensions.swift */; };
 		682D06A62A5487D200EA4745 /* LutoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682D06A52A5487D200EA4745 /* LutoApp.swift */; };
-		682D06A82A5487D200EA4745 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682D06A72A5487D200EA4745 /* ContentView.swift */; };
+		682D06A82A5487D200EA4745 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682D06A72A5487D200EA4745 /* MainView.swift */; };
 		682D06AA2A5487D500EA4745 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 682D06A92A5487D500EA4745 /* Assets.xcassets */; };
 		682D06AD2A5487D500EA4745 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 682D06AC2A5487D500EA4745 /* Preview Assets.xcassets */; };
 		682D06B82A5487D600EA4745 /* LutoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682D06B72A5487D600EA4745 /* LutoTests.swift */; };
 		682D06C22A5487D600EA4745 /* LutoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682D06C12A5487D600EA4745 /* LutoUITests.swift */; };
 		682D06C42A5487D600EA4745 /* LutoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 682D06C32A5487D600EA4745 /* LutoUITestsLaunchTests.swift */; };
+		6838051A2A57356700CEF29C /* TextFieldExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683805192A57356700CEF29C /* TextFieldExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		680A62112A5F475D004C21A4 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
 		682D06A22A5487D200EA4745 /* Luto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Luto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		682D06A52A5487D200EA4745 /* LutoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LutoApp.swift; sourceTree = "<group>"; };
-		682D06A72A5487D200EA4745 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		682D06A72A5487D200EA4745 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		682D06A92A5487D500EA4745 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		682D06AC2A5487D500EA4745 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		682D06AE2A5487D500EA4745 /* Luto.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Luto.entitlements; sourceTree = "<group>"; };
@@ -45,6 +48,7 @@
 		682D06BD2A5487D600EA4745 /* LutoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LutoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		682D06C12A5487D600EA4745 /* LutoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LutoUITests.swift; sourceTree = "<group>"; };
 		682D06C32A5487D600EA4745 /* LutoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LutoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		683805192A57356700CEF29C /* TextFieldExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		680A620F2A5F4739004C21A4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				683805192A57356700CEF29C /* TextFieldExtensions.swift */,
+				680A62112A5F475D004C21A4 /* ViewExtensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		682D06992A5487D200EA4745 = {
 			isa = PBXGroup;
 			children = (
@@ -95,8 +108,8 @@
 		682D06A42A5487D200EA4745 /* Luto */ = {
 			isa = PBXGroup;
 			children = (
+				683805182A57354900CEF29C /* UI */,
 				682D06A52A5487D200EA4745 /* LutoApp.swift */,
-				682D06A72A5487D200EA4745 /* ContentView.swift */,
 				682D06A92A5487D500EA4745 /* Assets.xcassets */,
 				682D06AE2A5487D500EA4745 /* Luto.entitlements */,
 				682D06AB2A5487D500EA4745 /* Preview Content */,
@@ -127,6 +140,15 @@
 				682D06C32A5487D600EA4745 /* LutoUITestsLaunchTests.swift */,
 			);
 			path = LutoUITests;
+			sourceTree = "<group>";
+		};
+		683805182A57354900CEF29C /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				682D06A72A5487D200EA4745 /* MainView.swift */,
+				680A620F2A5F4739004C21A4 /* Utils */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +281,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				682D06A82A5487D200EA4745 /* ContentView.swift in Sources */,
+				682D06A82A5487D200EA4745 /* MainView.swift in Sources */,
+				6838051A2A57356700CEF29C /* TextFieldExtensions.swift in Sources */,
+				680A62122A5F475D004C21A4 /* ViewExtensions.swift in Sources */,
 				682D06A62A5487D200EA4745 /* LutoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
