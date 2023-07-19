@@ -7,7 +7,20 @@
 
 import Foundation
 
-struct Task {
+class Task {
+    let id: Int64
     var title: String
-    var description: String
+    var body: String
+    
+    init(title: String, body: String) {
+        self.id = 0
+        self.title = title
+        self.body = body
+    }
+    
+    init(id: Int64, title: String, body: String) {
+        self.id = id
+        self.title = title
+        self.body = body
+    }
 }

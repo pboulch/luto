@@ -15,9 +15,10 @@ struct MainView: View {
         case descriptionField
     }
     
+    @ObservedObject var viewModel: TaskViewModel
+    
     @State var taskTitle = ""
     @State var taskDescription = ""
-    @State var listTask: [Task] = []
     
     @State var showAdditionnalFields = false
     
@@ -28,12 +29,12 @@ struct MainView: View {
             Text("Mes tâches")
             ScrollView {
                 LazyVStack(alignment: .leading) {
-                    ForEach(Array(listTask.enumerated()), id: \.offset) { index, task in
+                    ForEach(Array(viewModel.allTask.enumerated()), id: \.offset) { index, task in
                         HStack {
                             VStack(alignment: .leading) {
                                 Text("\(task.title)").font(.system(size: 16))
-                                if !task.description.isEmpty {
-                                    Text("\(task.description)")
+                                if !task.body.isEmpty {
+                                    Text("\(task.body)")
                                 }
                             }
                             .padding(EdgeInsets(top: 0, leading: 12, bottom: 0, trailing: 8))
@@ -60,6 +61,8 @@ struct MainView: View {
                     }
                 }.onSubmit {
                     addTask()
+                }.onAppear {
+                    focusState = .titleField
                 }
                 Button(action: {
                     addTask()
@@ -74,6 +77,13 @@ struct MainView: View {
                 TextField("Description ...", text: $taskDescription).focused($focusState, equals: .descriptionField).textFieldStyle(OvalTextFieldStyle()).padding(EdgeInsets(top: 8, leading: 0, bottom: 0, trailing: 0)).onSubmit {
                     addTask()
                 }
+            } else {
+                Button(action: {
+                    showAdditionnalFields = true
+                }, label: {
+                    Image("arrow-down").tint(Color.white)
+                }).buttonStyle(PlainButtonStyle())
+                
             }
         }
         .padding()
@@ -83,7 +93,7 @@ struct MainView: View {
     func addTask() {
         if !taskTitle.isEmpty {
             withAnimation {
-                listTask.append(Task(title: taskTitle, description: taskDescription))
+                viewModel.addTask(name: taskTitle, body: taskDescription)
             }
             taskTitle = ""
             taskDescription = ""
@@ -93,14 +103,8 @@ struct MainView: View {
     }
     
     func removeTask(index: Int) {
-        _ = withAnimation {
-            listTask.remove(at: index)
+        withAnimation {
+            viewModel.deleteTask(at: IndexSet([index]))
         }
-    }
-}
-
-struct MainView_Previews: PreviewProvider {
-    static var previews: some View {
-        MainView()
     }
 }

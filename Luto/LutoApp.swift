@@ -14,7 +14,7 @@ struct LutoApp: App {
     
     var body: some Scene {
         WindowGroup(id: "MainWindow") {
-            MainView()
+            MainView(viewModel: TaskViewModel())
         }
     }
 }
@@ -40,8 +40,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, ObservableObject {
         self.popover = NSPopover()
         self.popover.contentSize = NSSize(width: 500, height: 500)
         self.popover.behavior = .transient
-        self.popover.contentViewController = NSHostingController(rootView: MainView()
-)
+        self.popover.contentViewController = NSHostingController(rootView: MainView(viewModel: TaskViewModel()))
     }
     
     @objc func togglePopover() {
